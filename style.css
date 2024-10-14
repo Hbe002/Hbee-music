@@ -1,0 +1,412 @@
+/* From Uiverse.io by ahmed150up2 */ 
+body{
+  background-color: #050101;
+}
+
+
+/* triangle */
+
+#first{
+  display: flex;
+}
+/* From Uiverse.io by BlackisPlay */ 
+.cls-1 {
+  fill: #f15a24;
+  animation: cls1 4s ease infinite both;
+}
+
+@keyframes cls1 {
+  0% {
+    fill: #f15a24;
+  }
+
+  34% {
+    fill: #ed1c24;
+  }
+
+  66% {
+    fill: #f7931e;
+  }
+
+  100% {
+    fill: #f15a24;
+  }
+}
+
+.cls-1,
+.cls-2,
+.cls-3 {
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #f7931e;
+  animation: cls2 4s ease infinite both;
+}
+
+@keyframes cls2 {
+  0% {
+    fill: #f7931e;
+  }
+
+  34% {
+    fill: #f15a24;
+  }
+
+  66% {
+    fill: #ed1c24;
+  }
+
+  100% {
+    fill: #f7931e;
+  }
+}
+
+.cls-3 {
+  fill: #ed1c24;
+  animation: cls3 4s ease infinite both;
+}
+
+@keyframes cls3 {
+  0% {
+    fill: #ed1c24;
+  }
+
+  34% {
+    fill: #f7931e;
+  }
+
+  66% {
+    fill: #f15a24;
+  }
+
+  100% {
+    fill: #ed1c24;
+  }
+}
+
+.cls-4 {
+  display: none;
+}
+
+#triangle {
+  height: 50px;
+  width: 50px;
+  padding-top: 1px;
+  animation: triangle 4s both infinite;
+}
+
+@keyframes triangle {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+.main {
+  border: 2px solid #ff8800 !important;
+  background-color: rgb(6, 5, 5);
+  padding: 1em;
+  padding-bottom: 1.1em;
+  border-radius: 15px;
+  margin: 1em;
+  width: 350px;
+  border: 2px solid transparent; /* Initial border style */
+  transition: border 0.3s ease; /* Smooth transition for the border */
+}
+
+
+
+
+  
+  .loader {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transform: rotate(180deg);
+    justify-content: right;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+  }
+  
+    
+  .loader:hover {
+  
+    width: 300px;
+    cursor: pointer;
+    background-color: rgb(220, 180, 110);
+  }
+  
+  .currentplaying {
+    display: flex;
+    margin: 1em;
+  }
+  
+  .soundcloud {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.6em;
+  }
+  
+  .heading {
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: center;
+  }
+  
+  .loading {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 0.3em;
+  }
+  
+  .load {
+    width: 3px;
+    height: 33px;
+    background-color: #ff8800;
+    animation: 1s move6 infinite;
+    border-radius: 5px;
+    margin: 0.1em;
+  }
+  
+  .load:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .load:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .load:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .play {
+    position: relative;
+    left: 0.35em;
+    height: 1.6em;
+    width: 1.6em;
+    clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%);
+    background-color: black;
+    transform: rotate(-90deg);
+    align-self: center;
+    margin-top: 0.7em;
+    justify-self: center;
+  }
+  
+  .albumcover {
+    position: relative;
+    margin-right: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 232, 232);
+    align-self: center;
+    border-radius: 5px;
+  }
+  
+  .song {
+    position: relative;
+    transform: rotate(180deg);
+    margin-right: 1em;
+    color: black;
+    align-self: center;
+  }
+  
+  .artist {
+    font-size: 0.6em;
+  }
+  
+  @keyframes move6 {
+    0% {
+      height: 0.2em;
+    }
+  
+    25% {
+      height: 0.7em;
+    }
+  
+    50% {
+      height: 1.5em;
+    }
+  
+    100% {
+      height: 0.2em;
+    }
+  }
+#all{
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+/* From Uiverse.io by ahmed150up */ 
+
+.Hbee{
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  
+
+}
+.audio-player {
+ 
+  margin-top: 10px;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 80px;
+  background-color: #151313;
+  border-radius: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.player-controls {
+  flex-grow: 1;
+  display: fex;
+  flex-direction: column;
+}
+
+.song-info {
+  margin-bottom: 4px;
+}
+
+.song-title {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.artist {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #ddd;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #ff5500;
+  animation: progress-animation 10s linear infinite;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.play-btn,
+.pause-btn,
+.skip-btn,
+.volume-btn {
+  font-size: 16px;
+  color: #666;
+  margin-right: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-btn:hover,
+.pause-btn:hover,
+.skip-btn:hover,
+.volume-btn:hover {
+  transform: scale(1.2);
+}
+
+.volume-slider {
+  width: 100px;
+  height: 5px;
+  background-color: #ccc;
+  position: relative;
+  margin-left: 10px;
+}
+
+.volume-slider-bar {
+  height: 100%;
+  background-color: #666;
+}
+
+.volume-slider-handle {
+  width: 16px;
+  height: 16px;
+  background-color: #666;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.InputContainer {
+  margin-left: 100px;
+  width: 700px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  
+  width: 690px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
